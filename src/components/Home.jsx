@@ -1,17 +1,20 @@
 import React from 'react'
 import HeroImage from '../assets/HeroImage.png'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
-import { Link } from 'react-scroll' 
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div name="home" 
-    className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
+    <div name="home"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
 
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className='flex flex-col justify-center h-full'>
-          <h2 className='text-4xl sm:text-7xl font-bold text-white'>
-            I'm a Web Developer
+          
+          <h2 className='text-2xl sm:text-4xl md:text-5xl font-bold text-white leading-tight'>
+            Hi, I am Aashutosh Joshi
+            <br />
+            I'm a <span className="text-cyan-400">Web Developer</span>
           </h2>
           <p className='text-gray-500 py-4 max-w-md'>
             I have been working on building and designing software.
@@ -21,9 +24,9 @@ const Home = () => {
 
           <div>
             <Link to="portfolio"
-            smooth
-            duration={500}
-            className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+              smooth
+              duration={500}
+              className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
               portfolio
               <span className='group-hover:rotate-90 duration-300'>
                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
@@ -32,10 +35,10 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={HeroImage} 
-          alt="my profile"
-          className="relative rounded-full w-[260px] h-[260px] md:w-[350px] md:h-[350px] object-cover object-top"
-           style={{ boxShadow: '0 0 0 6px rgba(255,255,255,0.05)' }}
+          <img src={HeroImage}
+            alt="my profile"
+            className="relative rounded-full w-[260px] h-[260px] md:w-[350px] md:h-[350px] object-cover object-top"
+            style={{ boxShadow: '0 0 0 6px rgba(255,255,255,0.05)' }}
           />
         </div>
       </div>

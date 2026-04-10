@@ -20,7 +20,7 @@ const Navbar = () => {
             {/* Logo */}
             <div>
                 <h1 className="text-5xl font-signature ml-2">
-                    Aashutosh
+                    Aashutosh Joshi
                 </h1>
             </div>
 
